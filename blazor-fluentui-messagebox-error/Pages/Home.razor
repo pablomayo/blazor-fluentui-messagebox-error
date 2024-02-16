@@ -5,11 +5,13 @@
 
 <h1>Test message box</h1>
 
-<FluentButton Appearance="Appearance.Accent" OnClick="handleClick">Test MessageBox</FluentButton>
+<FluentButton Appearance="Appearance.Accent" OnClick="handleClick">Test MessageBox 2024</FluentButton>
 
 @code {
     void handleClick()
     {
-        _dialogService.ShowError("Error Message", "Error Title");
+        var temp1 = new MessageBox() { Content = new() { Message = "abc" } };
+
+        _dialogService.ShowError("Error Message", "Error Title");   
     }
 }
